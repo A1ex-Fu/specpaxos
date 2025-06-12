@@ -17,6 +17,8 @@
 #include <fstream>
 #include <iostream>
 #include <list>
+#include <cstdint>
+
 
 namespace nistore {
 using namespace std;

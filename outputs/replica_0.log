@@ -1,0 +1,4 @@
+20250510-161828-9554 70933 * BindToPort      (udptransport.cc:177): Binding to 127.0.0.1:8080
+20250510-161828-9568 70933 * Register        (udptransport.cc:379): Listening on UDP port 8080
+20250510-161828-9579 70933 * VRReplica       (replica.cc:76):    Batching enabled; batch size 64
+20250510-161839-3723 70933 * SignalCallback  (udptransport.cc:775): Terminating on SIGTERM/SIGINT

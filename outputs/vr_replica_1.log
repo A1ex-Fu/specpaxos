@@ -1,0 +1,17 @@
+20250510-154642-4787 69741 * BindToPort      (udptransport.cc:177): Binding to 127.0.0.1:8081
+20250510-154642-4798 69741 * Register        (udptransport.cc:379): Listening on UDP port 8081
+20250510-154657-8236 69741 * SignalCallback  (udptransport.cc:775): Terminating on SIGTERM/SIGINT
+20250510-154657-8250 69741 * LATENCY request/i: 21 ns 88 ns/32 ns 92 us (120900 samples, 10 ms total)
+20250510-154657-8259 69741 *      16 ns |       5782 | iiii
+20250510-154657-8265 69741 *      32 ns |      59058 | iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+20250510-154657-8273 69741 *      64 ns |      27184 | iiiiiiiiiiiiiiiiiiiiiii
+20250510-154657-8282 69741 *     128 ns |      28139 | iiiiiiiiiiiiiiiiiiiiiii
+20250510-154657-8289 69741 *     256 ns |        575 | 
+20250510-154657-8296 69741 *     512 ns |        115 | 
+20250510-154657-8306 69741 *    1024 ns |         14 | 
+20250510-154657-8321 69741 *    2048 ns |          4 | 
+20250510-154657-8331 69741 *    4096 ns |          1 | 
+20250510-154657-8342 69741 *    8192 ns |          4 | 
+20250510-154657-8352 69741 *      16 us |         18 | 
+20250510-154657-8359 69741 *      32 us |          4 | 
+20250510-154657-8370 69741 *      65 us |          2 | 

@@ -20,6 +20,8 @@
 #include <queue>
 #include <sys/time.h>
 #include <map>
+#include <cstdint>
+
 
 namespace nistore {
 using namespace std;

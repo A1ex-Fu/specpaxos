@@ -1,0 +1,17 @@
+20250510-154642-4764 69742 * BindToPort      (udptransport.cc:177): Binding to 127.0.0.1:8082
+20250510-154642-4778 69742 * Register        (udptransport.cc:379): Listening on UDP port 8082
+20250510-154657-8236 69742 * SignalCallback  (udptransport.cc:775): Terminating on SIGTERM/SIGINT
+20250510-154657-8252 69742 * LATENCY request/i: 22 ns 84 ns/32 ns 114 us (120900 samples, 10 ms total)
+20250510-154657-8260 69742 *      16 ns |       9156 | iiiiiiii
+20250510-154657-8266 69742 *      32 ns |      56987 | iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+20250510-154657-8274 69742 *      64 ns |      28172 | iiiiiiiiiiiiiiiiiiiiiiii
+20250510-154657-8281 69742 *     128 ns |      25820 | iiiiiiiiiiiiiiiiiiiiii
+20250510-154657-8288 69742 *     256 ns |        632 | 
+20250510-154657-8296 69742 *     512 ns |         95 | 
+20250510-154657-8305 69742 *    1024 ns |         13 | 
+20250510-154657-8321 69742 *    2048 ns |          7 | 
+20250510-154657-8332 69742 *    4096 ns |          2 | 
+20250510-154657-8342 69742 *    8192 ns |          4 | 
+20250510-154657-8351 69742 *      16 us |          7 | 
+20250510-154657-8358 69742 *      32 us |          3 | 
+20250510-154657-8368 69742 *      65 us |          2 | 

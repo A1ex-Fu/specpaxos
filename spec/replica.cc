@@ -92,9 +92,9 @@ SpecReplica::SpecReplica(Configuration config, int myIdx,
       doViewChangeQuorum(config.QuorumSize()),
       inViewQuorum(config.QuorumSize()-1)
 {
-    if (!initialize) {
-        RPanic("Recovery not implemented");
-    }
+    // if (!initialize) {
+    //     RPanic("Recovery not implemented");
+    // }
     
     this->status = STATUS_NORMAL;
     this->view = 0;
@@ -594,6 +594,10 @@ SpecReplica::HandleSyncReply(const TransportAddress &remote,
             int count = hashes.count(it->first);
             
             if (count >= configuration.FastQuorumSize()) {
+                Notice("expected quorum of %d for SYNCREPLY, found %d for hash %s",
+                       configuration.FastQuorumSize(), count,
+                       it->first.c_str());
+                       
                 ASSERT(matchingHash == NULL);
                 matchingHash = &it->first;
             }

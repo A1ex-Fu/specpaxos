@@ -1,0 +1,18 @@
+20250510-154657-9844 70045 PANIC Register        (udptransport.cc:307): Assertion `replicaIdx < config.n' failed
+20250510-154657-9875 70045 ! Backtrace       (message.cc:169):   Backtrace:
+20250510-154658-0153 70045 ! Backtrace       (message.cc:218):    0: _Z6_Panicv+0xd [0x55d5119c6552]
+
+20250510-154658-0314 70045 ! Backtrace       (message.cc:218):    1: _ZN12UDPTransport8RegisterEP17TransportReceiverRKN9specpaxos13ConfigurationEi+0x9b [0x55d5119cd4a9]
+
+20250510-154658-0408 70045 ! Backtrace       (message.cc:218):    2: _ZN9specpaxos7ReplicaC2ERKNS_13ConfigurationEibP9TransportPNS_10AppReplicaE+0x9b [0x55d5119c3793]
+
+20250510-154658-0457 70045 ! Backtrace       (message.cc:218):    3: _ZN9specpaxos9fastpaxos16FastPaxosReplicaC2ENS_13ConfigurationEibP9TransportPNS_10AppReplicaE+0x63 [0x55d511a1e1a1]
+
+20250510-154658-0496 70045 ! Backtrace       (message.cc:218):    4: main+0x903 [0x55d511984078]
+
+20250510-154658-0516 70045 ! Backtrace       (message.cc:218):    5: __libc_init_first+0x8a [0x7f7c7db381da]
+
+20250510-154658-0538 70045 ! Backtrace       (message.cc:218):    6: __libc_start_main+0x8b [0x7f7c7db3828b]
+
+20250510-154658-0608 70045 ! Backtrace       (message.cc:218):    7: _start+0x25 [0x55d511983675]
+

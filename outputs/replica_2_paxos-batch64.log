@@ -1,0 +1,12 @@
+20250510-173247-6095 71497 * BindToPort      (udptransport.cc:177): Binding to 127.0.0.1:8082
+20250510-173247-6110 71497 * Register        (udptransport.cc:379): Listening on UDP port 8082
+20250510-173247-6130 71497 * VRReplica       (replica.cc:76):    Batching enabled; batch size 32
+20250510-173339-5460 71497 * SignalCallback  (udptransport.cc:775): Terminating on SIGTERM/SIGINT
+20250510-173339-5510 71497 * LATENCY request/i: 21 ns 332 ns/128 ns 1601 ns (253 samples, 84 us total)
+20250510-173339-5519 71497 *      16 ns |         17 | iiiiiiiiiiiiii
+20250510-173339-5533 71497 *      32 ns |         31 | iiiiiiiiiiiiiiiiiiiiiiiiii
+20250510-173339-5552 71497 *      64 ns |         47 | iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+20250510-173339-5573 71497 *     128 ns |         59 | iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+20250510-173339-5629 71497 *     256 ns |         43 | iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+20250510-173339-5638 71497 *     512 ns |         36 | iiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+20250510-173339-5677 71497 *    1024 ns |         20 | iiiiiiiiiiiiiiii
