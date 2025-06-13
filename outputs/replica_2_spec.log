@@ -1,21 +1,21 @@
-20250513-000556-4230 07433 * BindToPort      (udptransport.cc:177): Binding to 10.10.1.4:8082
-20250513-000556-4231 07433 PANIC BindToPort      (udptransport.cc:180): Failed to bind to socket: Cannot assign requested address
-20250513-000556-4231 07433 ! Backtrace       (message.cc:169):   Backtrace:
-20250513-000556-4236 07433 ! Backtrace       (message.cc:218):    0: _Z6_Panicv+0xd [0x55d9f4f54c94]
+20250513-002522-8285 10029 * BindToPort      (udptransport.cc:177): Binding to 10.10.1.4:8082
+20250513-002522-8286 10029 PANIC BindToPort      (udptransport.cc:180): Failed to bind to socket: Cannot assign requested address
+20250513-002522-8286 10029 ! Backtrace       (message.cc:169):   Backtrace:
+20250513-002522-8291 10029 ! Backtrace       (message.cc:218):    0: _Z6_Panicv+0xd [0x56202c389c94]
 
-20250513-000556-4238 07433 ! Backtrace       (message.cc:218):    1: _ZL10BindToPortiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_+0x301 [0x55d9f4f5c45e]
+20250513-002522-8293 10029 ! Backtrace       (message.cc:218):    1: _ZL10BindToPortiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_+0x301 [0x56202c39145e]
 
-20250513-000556-4241 07433 ! Backtrace       (message.cc:218):    2: _ZN12UDPTransport8RegisterEP17TransportReceiverRKN9specpaxos13ConfigurationEi+0x3a6 [0x55d9f4f5d166]
+20250513-002522-8296 10029 ! Backtrace       (message.cc:218):    2: _ZN12UDPTransport8RegisterEP17TransportReceiverRKN9specpaxos13ConfigurationEi+0x3a6 [0x56202c392166]
 
-20250513-000556-4243 07433 ! Backtrace       (message.cc:218):    3: _ZN9specpaxos7ReplicaC2ERKNS_13ConfigurationEibP9TransportPNS_10AppReplicaE+0x9b [0x55d9f4f51fb9]
+20250513-002522-8298 10029 ! Backtrace       (message.cc:218):    3: _ZN9specpaxos7ReplicaC2ERKNS_13ConfigurationEibP9TransportPNS_10AppReplicaE+0x9b [0x56202c386fb9]
 
-20250513-000556-4245 07433 ! Backtrace       (message.cc:218):    4: _ZN9specpaxos4spec11SpecReplicaC2ENS_13ConfigurationEibP9TransportPNS_10AppReplicaE+0x5b [0x55d9f4f0b677]
+20250513-002522-8300 10029 ! Backtrace       (message.cc:218):    4: _ZN9specpaxos4spec11SpecReplicaC2ENS_13ConfigurationEibP9TransportPNS_10AppReplicaE+0x5b [0x56202c340677]
 
-20250513-000556-4247 07433 ! Backtrace       (message.cc:218):    5: main+0x952 [0x55d9f4f0b107]
+20250513-002522-8303 10029 ! Backtrace       (message.cc:218):    5: main+0x952 [0x56202c340107]
 
-20250513-000556-4250 07433 ! Backtrace       (message.cc:218):    6: __libc_init_first+0x90 [0x7f553a151da0]
+20250513-002522-8306 10029 ! Backtrace       (message.cc:218):    6: __libc_init_first+0x90 [0x7fdfac6aada0]
 
-20250513-000556-4253 07433 ! Backtrace       (message.cc:218):    7: __libc_start_main+0x80 [0x7f553a151e40]
+20250513-002522-8309 10029 ! Backtrace       (message.cc:218):    7: __libc_start_main+0x80 [0x7fdfac6aae40]
 
-20250513-000556-4256 07433 ! Backtrace       (message.cc:218):    8: _start+0x25 [0x55d9f4f0a6b5]
+20250513-002522-8311 10029 ! Backtrace       (message.cc:218):    8: _start+0x25 [0x56202c33f6b5]
 
