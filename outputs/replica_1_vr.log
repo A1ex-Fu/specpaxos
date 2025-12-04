@@ -1,0 +1,21 @@
+20250513-031003-4353 14678 * BindToPort      (udptransport.cc:177): Binding to 10.10.1.3:8081
+20250513-031003-4354 14678 PANIC BindToPort      (udptransport.cc:180): Failed to bind to socket: Cannot assign requested address
+20250513-031003-4355 14678 ! Backtrace       (message.cc:169):   Backtrace:
+20250513-031003-4359 14678 ! Backtrace       (message.cc:218):    0: _Z6_Panicv+0xd [0x55a874b5fc94]
+
+20250513-031003-4362 14678 ! Backtrace       (message.cc:218):    1: _ZL10BindToPortiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_+0x301 [0x55a874b6745e]
+
+20250513-031003-4365 14678 ! Backtrace       (message.cc:218):    2: _ZN12UDPTransport8RegisterEP17TransportReceiverRKN9specpaxos13ConfigurationEi+0x3a6 [0x55a874b68166]
+
+20250513-031003-4367 14678 ! Backtrace       (message.cc:218):    3: _ZN9specpaxos7ReplicaC2ERKNS_13ConfigurationEibP9TransportPNS_10AppReplicaE+0x9b [0x55a874b5cfb9]
+
+20250513-031003-4370 14678 ! Backtrace       (message.cc:218):    4: _ZN9specpaxos2vr9VRReplicaC2ENS_13ConfigurationEibP9TransportiPNS_10AppReplicaE+0x63 [0x55a874b87111]
+
+20250513-031003-4372 14678 ! Backtrace       (message.cc:218):    5: main+0x84b [0x55a874b16000]
+
+20250513-031003-4375 14678 ! Backtrace       (message.cc:218):    6: __libc_init_first+0x90 [0x7f84676cbda0]
+
+20250513-031003-4378 14678 ! Backtrace       (message.cc:218):    7: __libc_start_main+0x80 [0x7f84676cbe40]
+
+20250513-031003-4380 14678 ! Backtrace       (message.cc:218):    8: _start+0x25 [0x55a874b156b5]
+
