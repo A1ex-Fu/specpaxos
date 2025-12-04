@@ -35,7 +35,7 @@ LIBUNWIND_CFLAGS :=
 LIBUNWIND_LDFLAGS := -lunwind
 #LIBUNWIND_CFLAGS := $(shell pkg-config --cflags libunwind)
 #LIBUNWIND_LDFLAGS := $(shell pkg-config --libs libunwind)
-CFLAGS += $(LIBUNWIND_CFLAGS)
+CFLAGS += $(LIBUNWIND_CFLAGS) -DNASSERT -O2
 LDFLAGS += $(LIBUNWIND_LDFLAGS)
 
 
