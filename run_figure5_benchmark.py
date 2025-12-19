@@ -36,36 +36,6 @@ THROUGHPUT_RE = re.compile(r"Completed\s+(\d+)\s+requests\s+in\s+([0-9.]+)\s+sec
 MEDIAN_LAT_RE = re.compile(r"Median latency is\s+([0-9]+)\s+ns")
 
 
-def start_replicas():
-    replicas = []
-    log_files = []
-
-    def launch_replica(index, is_witness=False):
-        log_path = os.path.join(OUTPUT_DIR, f"replica_{index}{'_witness' if is_witness else ''}.log")
-        log_file = open(log_path, "w")
-        args = ["./bench/replica", "-c", CONFIG_FILE, "-i", str(index), "-m", PROTOCOL]
-        # if is_witness:
-        #     args.append("-w")
-        proc = subprocess.Popen(args, stdout=log_file, stderr=log_file, text=True)
-        replicas.append((proc, log_file))
-
-    launch_replica(0)
-    launch_replica(1, is_witness=True)
-    launch_replica(2)
-
-    time.sleep(5)
-    return replicas
-
-
-def kill_replicas(replicas):
-    for proc, _ in replicas:
-        proc.terminate()  
-    for proc, log_file in replicas:
-        proc.wait()       
-        log_file.flush() 
-        log_file.close() 
-
-
 def run_clients(n_clients, protocol):
     print(f"\n=== Running {n_clients} clients for protocol '{protocol}' ===")
     procs = []
@@ -208,11 +178,9 @@ def main():
             all_results.append((n_clients, tput, median))
             continue
 
-        replicas = start_replicas()
         time.sleep(WARMUP_TIME)
 
         tput, median = run_clients(n_clients, PROTOCOL)
-        kill_replicas(replicas)
 
         if tput is not None and median is not None:
             append_result(csv_path, n_clients, tput, median)
