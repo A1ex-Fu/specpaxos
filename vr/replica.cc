@@ -101,7 +101,7 @@ VRReplica::VRReplica(Configuration config, int myIdx,
     _Latency_Init(&requestLatency, "request");
     _Latency_Init(&executeAndReplyLatency, "executeAndReply");
 
-    if (initialize) {
+    if (true) {
         if (AmLeader()) {
             nullCommitTimeout->Start();
         } else {
