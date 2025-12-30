@@ -81,10 +81,7 @@ UnreplicatedReplica::UnreplicatedReplica(Configuration config,
                                          AppReplica *app)
     : Replica(config, myIdx, initialize, transport, app)
 {
-    if (!initialize) {
-        Panic("Recovery does not make sense for unreplicated mode");
-    }
-
+    
     this->status = STATUS_NORMAL;
 }
 
