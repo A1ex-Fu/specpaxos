@@ -137,7 +137,7 @@ void
 
         
 
-    const std::string &msg = msg100;
+    const std::string &msg = msg10;
  
      Latency_Start(&latency);  
      client.Invoke(msg, std::bind(&BenchmarkClient::OnReply,
